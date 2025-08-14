@@ -1,0 +1,35 @@
+[
+  {
+    "local": "Parque Ibirapuera, SP",
+    "lat": -23.587,
+    "lon": -46.657,
+    "dados": [
+      {"data_hora": "2025-08-14T08:00:00Z", "co": 1.2, "co2": 450, "nox": 0.04, "temp": 22.5, "umidade": 65, "qualidade": "Bom"},
+      {"data_hora": "2025-08-14T12:00:00Z", "co": 1.8, "co2": 520, "nox": 0.06, "temp": 28.1, "umidade": 55, "qualidade": "Moderado"},
+      {"data_hora": "2025-08-14T16:00:00Z", "co": 2.5, "co2": 610, "nox": 0.08, "temp": 26.3, "umidade": 60, "qualidade": "Crítico"},
+      {"data_hora": "2025-08-14T20:00:00Z", "co": 1.5, "co2": 480, "nox": 0.05, "temp": 21.0, "umidade": 70, "qualidade": "Bom"}
+    ]
+  },
+  {
+    "local": "Avenida Paulista, SP",
+    "lat": -23.561,
+    "lon": -46.656,
+    "dados": [
+      {"data_hora": "2025-08-14T08:00:00Z", "co": 2.0, "co2": 650, "nox": 0.10, "temp": 23.0, "umidade": 62, "qualidade": "Moderado"},
+      {"data_hora": "2025-08-14T12:00:00Z", "co": 3.5, "co2": 800, "nox": 0.15, "temp": 29.5, "umidade": 50, "qualidade": "Crítico"},
+      {"data_hora": "2025-08-14T16:00:00Z", "co": 3.0, "co2": 750, "nox": 0.12, "temp": 27.8, "umidade": 58, "qualidade": "Crítico"},
+      {"data_hora": "2025-08-14T20:00:00Z", "co": 2.2, "co2": 680, "nox": 0.11, "temp": 22.1, "umidade": 68, "qualidade": "Moderado"}
+    ]
+  },
+  {
+    "local": "Campus USP, SP",
+    "lat": -23.559,
+    "lon": -46.731,
+    "dados": [
+      {"data_hora": "2025-08-14T08:00:00Z", "co": 1.0, "co2": 400, "nox": 0.03, "temp": 21.8, "umidade": 67, "qualidade": "Bom"},
+      {"data_hora": "2025-08-14T12:00:00Z", "co": 1.5, "co2": 480, "nox": 0.05, "temp": 27.0, "umidade": 58, "qualidade": "Bom"},
+      {"data_hora": "2025-08-14T16:00:00Z", "co": 1.3, "co2": 450, "nox": 0.04, "temp": 25.5, "umidade": 62, "qualidade": "Bom"},
+      {"data_hora": "2025-08-14T20:00:00Z", "co": 0.9, "co2": 390, "nox": 0.03, "temp": 20.5, "umidade": 72, "qualidade": "Bom"}
+    ]
+  }
+]
