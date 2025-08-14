@@ -1,6 +1,6 @@
 /*
-* Layout do estilo do Dashboard do projeto.
-*/
+ * Layout do estilo do Dashboard do projeto (MODIFICADO).
+ */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,17 +20,19 @@ header {
 
 h1, h2 {
     margin: 0;
+    text-align: 20px;
 }
 
 #dashboard {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Alinha os itens verticalmente por padrão */
     gap: 20px;
     padding: 20px;
 }
 
 #mapa-container {
-    flex: 1 1 600px;
+    width: 100%; /* O mapa ocupa a largura total */
+    margin-bottom: 20px; /* Espaço abaixo do mapa */
 }
 
 #mapa {
@@ -39,11 +41,10 @@ h1, h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#grafico-container {
-    flex: 1 1 400px;
-    display: flex;
-    flex-direction: column;
+#graficos-container {
+    display: flex; /* Alinha os gráficos horizontalmente */
     gap: 20px;
+    width: 100%; /* Os gráficos ocupam a largura total disponível */
 }
 
 .grafico {
@@ -51,5 +52,28 @@ h1, h2 {
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Faz com que os gráficos ocupem o mesmo espaço horizontalmente */
+    height: 350px; /* Define uma altura para os gráficos */
 }
 
+/*
+ * Estilo para centralizar os títulos das seções.
+ */
+#mapa-container h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título do mapa */
+}
+
+.titulo-graficos {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+#graficos-container h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título dos gráficos */
+}
