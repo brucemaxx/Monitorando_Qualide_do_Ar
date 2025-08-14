@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoramento de Qualidade do Ar</title>
 
-    <script src="https://cdn.plot.ly/plotly-lastest.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox=gl-js/v2.14.1/mapbox-gl.js"></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox.gl.css' rel='stylesheet'/>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Dashboard de Qualidade do Ar</h1>
+    <header>
+        <h1>Dashboard de Qualidade do Ar</h1>
+    </header>
 
     <main id="dashboard">
         <section id="mapa-container">
@@ -21,7 +23,7 @@
         </section>
 
         <section id="graficos-container">
-            <h2>Dados em Tempo Real (Similado)</h2>
+            <h2>Dados em Tempo Real (Simulado)</h2>
             <div id="qualidade-ar-graph" class="grafico"></div>
             <div id="poluentes-graph" class="grafico"></div>
             <div id="meteo-graph" class="grafico"></div>
@@ -29,6 +31,5 @@
     </main>
 
     <script type="module" src="src/js/app.js"></script>
-
 </body>
 </html>

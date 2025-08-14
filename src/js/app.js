@@ -2,25 +2,27 @@
 // Módulo principal que organiza todos os dados e inicializa a aplicação dos componentes.
 
 import { initializeMap } from './map.js';
-import {renderCharts, updateCharts} from '.charts.js';
+import { renderCharts, updateCharts } from './charts.js'; // CAMINHO CORRIGIDO
 
 // URL estática do arquivo de teste.
 const DATA_URL = './src/data/data.json';
 
 /**
  * Carrega os dados do arquivo JSON.
- * @retuns {Promise<Array>} - Uma promessa que resolve para um array de dados.
+ * @returns {Promise<Array>} - Uma promessa que resolve para um array de dados.
  */
 async function fetchData() {
     try {
         const response = await fetch(DATA_URL);
         if (!response.ok) {
-            throw new Error('Erro ao carregar os dados: $reponse.statusText}');
-        } 
+            // CORRIGIDO: interpolação de string
+            throw new Error(`Erro ao carregar os dados: ${response.statusText}`);
+        }
         return await response.json();
 
-    } catch (erro) {
-        console.error('Falha no carregamento dos dados:', error);
+    } catch (erro) { // NOME DA VARIÁVEL 'erro'
+        // CORRIGIDO: uso da variável 'erro'
+        console.error('Falha no carregamento dos dados:', erro);
         return null;
     }
 }
@@ -32,7 +34,7 @@ async function fetchData() {
 async function initializeDashboard() {
     const data = await fetchData();
     if (!data) {
-        // Exibir uma de erro na interface, caso os dados não carreguem.
+        // Exibir uma mensagem de erro na interface, caso os dados não carreguem.
         document.getElementById('mapa').textContent = 'Erro ao carregar dados.';
         return;
     }
